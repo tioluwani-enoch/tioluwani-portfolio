@@ -2,7 +2,7 @@ import { personal } from '../data/content'
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center px-8 md:px-16 pt-32 pb-16 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center px-4 sm:px-8 md:px-16 pt-32 pb-16 overflow-hidden">
       {/* Grid background */}
       <div className="absolute inset-0 hero-grid-bg" />
 
@@ -26,7 +26,7 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="font-display font-extrabold leading-[0.95] tracking-tighter mb-6"
-          style={{ fontSize: 'clamp(3.5rem, 8vw, 7rem)' }}>
+          style={{ fontSize: 'clamp(2rem, 9vw, 7rem)' }}>
           <span className="text-muted block">{personal.title}</span>
           <span className="block">{personal.titleHighlight}</span>
           <span className="text-accent block">{personal.titleAccent}</span>
