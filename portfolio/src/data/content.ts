@@ -34,42 +34,48 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'green-ml',
-    description: 'A machine learning model that classifies waste into three categories: Compost, Recycle, and Landfill. Built to make recycling smarter.',
-    tags: ['Python', 'ML', 'Classification'],
-    url: 'https://github.com/tioluwani-enoch/green-ml',
+    title: "green-ml",
+    description:
+      "Supervised image classification system using transfer learning on MobileNetV2 to sort waste into Compost, Recycle, and Landfill. Includes data augmentation, adaptive learning rate scheduling, and deployment paths for Flask, Raspberry Pi, and TensorFlow Lite.",
+    tags: ["Python", "TensorFlow", "MobileNetV2", "Transfer Learning", "Computer Vision"],
+    url: "https://github.com/tioluwani-enoch/green-ml",
   },
   {
-    title: 'banah.js',
-    description: 'Scaffold Node.js projects with ease — no more manually installing Express, CORS, and boilerplate basics. A beginner-friendly alternative to Lodash.',
-    tags: ['TypeScript', 'Node.js', 'OSS'],
-    url: 'https://github.com/tioluwani-enoch/banah.js',
+    title: "banah.js",
+    description:
+      "A globally-installed npm CLI that scaffolds a production-ready Node.js project in one command — auto-installs Express, CORS, dotenv, and Nodemon with a clean, modular directory structure ready to run.",
+    tags: ["TypeScript", "Node.js", "CLI", "npm", "Open Source"],
+    url: "https://github.com/tioluwani-enoch/banah.js",
   },
   {
-    title: 'Project Collab Hub',
-    description: 'A platform for CS students to find collaborators. Helps students connect with others who are excited about their project ideas. (Coming soon)',
-    tags: ['React', 'Next.js', 'Community'],
-    url: '#',
+    title: "UrbanLens",
+    description:
+      "AI-powered urban heat agent built for the Google Build with AI Hackathon. Users pick a location on a map, ask a question, and the agent autonomously queries weather APIs, land-use maps, and a custom RGB-to-thermal pipeline — streaming every tool call to the UI in real time.",
+    tags: ["TypeScript", "Python", "FastAPI", "Next.js", "Gemini", "Agentic AI", "Satellite Imagery"],
+    url: "https://github.com/LambSystems/urbanlens",
   },
   {
-    title: 'Portfolio Website',
-    description: 'A clean, React-based personal portfolio to showcase skills and projects. You\'re looking at it right now.',
-    tags: ['React', 'TypeScript', 'Tailwind'],
-    url: 'https://github.com/tioluwani-enoch/portfolio-website',
+    title: "devlog",
+    description:
+      "Auto-generate daily standup notes from your GitHub activity. Connects via OAuth, pulls commits, PRs, and reviews, and turns them into a clean editable summary you can copy straight into Slack. Stores history in PostgreSQL.",
+    tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "GitHub API", "OAuth"],
+    url: "https://github.com/tioluwani-enoch/devlog",
   },
   {
-    title: 'DSA Practice',
-    description: 'A structured repository of Data Structures & Algorithms solutions in Python and JavaScript, following Grokking Algorithms chapter by chapter.',
-    tags: ['Python', 'JavaScript', 'DSA'],
-    url: 'https://github.com/tioluwani-enoch/DSA',
+    title: "quick-forge",
+    description:
+      "A Windows desktop assistant built with Electron and React for one-click system task automation — launch apps, flush DNS, clear temp files, and restart Explorer. Actions are JSON-configurable and UAC elevation is handled automatically.",
+    tags: ["TypeScript", "Electron", "React", "Desktop App", "Windows"],
+    url: "https://github.com/tioluwani-enoch/quick-forge",
   },
   {
-    title: 'LeetCode Grind',
-    description: 'Actively solving algorithm challenges to sharpen problem-solving skills and prepare for technical interviews at U.S. startups.',
-    tags: ['Python', 'Algorithms', 'Interview Prep'],
-    url: 'https://github.com/tioluwani-enoch',
+    title: "LeetCode Grind",
+    description:
+      "Actively solving algorithm challenges to sharpen problem-solving skills and prepare for technical interviews at U.S. startups.",
+    tags: ["Python", "Algorithms", "Interview Prep"],
+    url: "https://github.com/tioluwani-enoch",
   },
-]
+];
 
 export type SkillCategory = 'languages' | 'frameworks' | 'infra'
 
