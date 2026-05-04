@@ -12,9 +12,31 @@
     font-family: 'Space Mono', monospace;
     overflow-x: hidden;
   }
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button {
+    font: inherit;
+  }
 }
 
 @layer utilities {
+  .primary-action {
+    @apply inline-flex items-center justify-center border border-accent bg-accent px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-bg transition-transform hover:-translate-y-0.5;
+  }
+  .secondary-action {
+    @apply inline-flex items-center justify-center border border-border bg-transparent px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-ink transition-colors hover:border-accent hover:text-accent;
+  }
+  .hero-link {
+    @apply inline-flex items-center justify-center text-sm font-bold text-ink transition-colors hover:text-accent;
+  }
+  .hero-link-primary {
+    @apply rounded-full border border-border px-5 py-3 hover:border-accent;
+  }
+  .tag {
+    @apply border border-border bg-bg/60 px-2.5 py-1.5 text-[11px] uppercase tracking-[0.14em] text-muted;
+  }
   .hero-grid-bg {
     background-image:
       linear-gradient(rgba(0,255,136,0.04) 1px, transparent 1px),
