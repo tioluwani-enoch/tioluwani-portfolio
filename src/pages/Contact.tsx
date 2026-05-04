@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <PageShell eyebrow="// contact" title="Contact">
       <PageLead>
-        The best ways to reach me directly. No contact form, no extra routing.
+        The best ways to reach me directly.
       </PageLead>
       <div className="grid gap-px border border-border bg-border">
         {links.map((link) => (
