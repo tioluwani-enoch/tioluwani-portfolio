@@ -123,20 +123,26 @@ export const projects: Project[] = [
     url: 'https://github.com/tioluwani-enoch/quick-forge',
   },
   {
-    title: 'banah.js',
+    title: 'Daily Spin',
     description:
-      'A TypeScript CLI for scaffolding production-ready Node.js projects without repeating setup work.',
-    stack: ['TypeScript', 'Node.js', 'CLI', 'npm', 'Express'],
+      'A music companion that sits above Spotify to resurface saved tracks, watch new releases, capture recommendations, and keep playlists intentional.',
+    stack: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Spotify API', 'Vitest'],
     decisions: [
-      'Automates common backend setup for Express, CORS, dotenv, and Nodemon.',
-      'Creates a modular directory structure so projects start organized instead of improvised.',
-      'Focused on repeatable developer workflow rather than another template users must manually edit.',
+      'Built Spotify OAuth, library backfill, playback, daily picks, and watchlist release sync around a personal music workflow.',
+      'Modeled saved tracks, recent plays, playlists, artists, releases, and capture inbox data in Supabase.',
+      'Added playlist health and Morning Pick scoring so recommendations are explainable rather than a generic discovery feed.',
     ],
-    url: 'https://github.com/tioluwani-enoch/banah.js',
+    url: 'https://github.com/tioluwani-enoch/daily-spin',
   },
 ]
 
 export const moreProjects = [
+  {
+    title: 'banah.js',
+    description: 'TypeScript CLI for scaffolding production-ready Node.js projects without repeating setup work.',
+    stack: ['TypeScript', 'Node.js', 'CLI', 'npm', 'Express'],
+    url: 'https://github.com/tioluwani-enoch/banah.js',
+  },
   {
     title: 'UrbanLens',
     description: 'AI-powered urban heat agent using maps, weather APIs, land-use context, and thermal reasoning.',
